@@ -1,0 +1,14 @@
+﻿{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: #0094ff;
+}
+footer {
+    color: #233181;
+}
+.footer_right {
+    color: red;
+    margin-right: 50px;
+}
