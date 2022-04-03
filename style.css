@@ -42,9 +42,12 @@
     font-size: 16px;
     margin-left: 20px;
 }
-.auto{
+.auto {
     color: #EA6283;
-    width: 300px;
+    text-decoration: none;
+    background: #7DBCEC;
+    width: 350px;
+    height: 450px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -53,6 +56,7 @@
 }
     .auto input[type = "email"], .auto input[type = "text"] {
         border: 0;
+        color: black;
         display: block;
         margin: 20px auto;
         text-align: center;
@@ -60,17 +64,19 @@
         padding: 14px 10px;
         width: 200px;
         outline: none;
-        color: white;
         transition: 0.25s;
     }
-    .auto input[type = "email"]:focus, .auto input[type = "text"]:focus {
-        width: 270px;
-        border-color: #FFC039;
-    }
+        .auto input[type = "email"]:focus, .auto input[type = "text"]:focus {
+            width: 270px;
+            border-color: #FFC039;
+            color: black;
+        }
     .auto input[type = "submit"] {
         border: 0;
-        background-color: #F8F335;
-        /*background-color: #EA6283;*/
+        /*background-color: #F8F335;
+        background-color: #EA6283;*/
+        display: block;
+        background-color: none;
         margin: 20px auto;
         text-align: center;
         padding: 14px 10px;
@@ -81,7 +87,11 @@
         color: #EA6283;
         border-radius: 20px;
         transition: 0.25s;
+        cursor:pointer;
     }
+        .auto input[type = "submit"]:hover {
+            background: #F8F335;
+        }
 main .container {
     padding: 0;
     background-color: white;
