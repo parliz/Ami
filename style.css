@@ -2,8 +2,41 @@
     margin: 0;
     padding: 0;
 }
-body{
-    color: #0094ff;
+.header {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #D6D6D6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+.header-login {
+    display: flex;
+
+}
+.header-name {
+    color: red;
+    text-decoration: none;
+    font-size: 40px;
+}
+.btn, a.btn{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 1200px;
+}
+container {
+   
+}
+body {
+    background-color: #5BA9FF;
+    color: #FFC039;
 }
 footer {
     color: #233181;

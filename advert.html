@@ -5,17 +5,31 @@
     <link href="style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <h1>Ami</h1>
-            <p>Доска объявлений</p>
-            <header class="header">
-                <div class="container">
-                </div>
+        <header class="header">
+            <div class="container">
+                <div class="header-login">
+                <a href="advert.html" class="header-name">AMI</a>
                 <a href="input.html">Войти</a>
-                <button class="btn">Добавить объявление +</button>
-            </header>
+                <a href="#" class="btn">Добавить объявление</a>
+                </div>
+            </div>
+                <!--<a href="input.html">Войти</a>
+                <button class="btn">Добавить объявление +</button>-->
+        </header>
         
     <main>
-        <div class="container"></div>
+        <div class="container">
+            <h1>Объявления</h1>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Недвижимость</a>
+                    <a href="#">Услуги</a>
+                    <a href="#">Животные</a>
+                </div>
+            </div>
+
+        </div>
     </main>
     <footer>
         <div class="footer_left">
