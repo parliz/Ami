@@ -16,32 +16,94 @@
 
 }
 .header-name {
-    color: red;
+    color: #EA6283;
+    font-weight: 700;
     text-decoration: none;
     font-size: 40px;
 }
-.btn, a.btn{
-    background-color: #4CAF50; /* Green */
+.header-autoris {
+    color: #EA6283;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 1050px;
+    margin-top: 5px;
+    padding: 5px 20px;
+    font-size: 16px;
+}
+.btn, a.btn {
+    background-color: #F8F335; /* Green */
     border: none;
-    color: white;
-    padding: 10px 15px;
+    color: #EA6283;
+    font-weight: 700;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin-left: 1200px;
+    margin-left: 20px;
 }
-container {
-   
+.auto{
+    color: #EA6283;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+    .auto input[type = "email"], .auto input[type = "text"] {
+        border: 0;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        border: 3px solid #EA6283;
+        padding: 14px 10px;
+        width: 200px;
+        outline: none;
+        color: white;
+        transition: 0.25s;
+    }
+    .auto input[type = "email"]:focus, .auto input[type = "text"]:focus {
+        width: 270px;
+        border-color: #FFC039;
+    }
+    .auto input[type = "submit"] {
+        border: 0;
+        background-color: #F8F335;
+        /*background-color: #EA6283;*/
+        margin: 20px auto;
+        text-align: center;
+        padding: 14px 10px;
+        width: 200px;
+        outline: none;
+        /*color: #251f94;*/
+        font-weight: 700;
+        color: #EA6283;
+        border-radius: 20px;
+        transition: 0.25s;
+    }
+main .container {
+    padding: 0;
+    background-color: white;
+    height: 700px;
+    margine: 0;
 }
 body {
-    background-color: #5BA9FF;
+    background-color: #99D9DA;
     color: #FFC039;
 }
 footer {
     color: #233181;
 }
-.footer_right {
-    color: red;
-    margin-right: 50px;
+.sitemap {
+    position: absolute;
+    right: 35px;
+    padding: 50px;
+    margin-right: 100px;
+    
+}
+.contact {
+    position: absolute;
+    left: 35px;
+    padding: 50px;
 }
