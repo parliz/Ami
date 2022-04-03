@@ -8,27 +8,50 @@
         <header class="header">
             <div class="container">
                 <div class="header-login">
-                <a href="advert.html" class="header-name">AMI</a>
-                <a href="enter.html" class="header-autoris">Войти</a>
-                <a href="#" class="btn">Добавить объявление</a>
+                    <a href="advert.html" class="header-name">AMI</a>
+                    <img src="place.png" class="img_place" width="23" height="23">
+                    <select id="city" class="cities">
+                        <option>Москва</option>
+                        <option>Санкт-Петербург</option>
+                        <option>Новороссийск</option>
+                        <option>Екатеринбург</option>
+                        <option>Казань</option>
+                        <option>Нижний Новгород</option>
+                        <option>Челябинск</option>
+                        <option>Самара</option>
+                        <option>Красноярск</option>
+                        <option>Пермь</option>
+                        <option>Волгоград</option>
+                        <option>Чебоксары</option>
+                    </select>
+                    <a href="enter.html" class="header-autoris">Войти</a>
+                    <a href="#" class="btn">Добавить объявление</a>
                 </div>
             </div>
-                <!--<a href="input.html">Войти</a>
-                <button class="btn">Добавить объявление +</button>-->
+            <!--<a href="input.html">Войти</a>
+    <button class="btn">Добавить объявление +</button>-->
+            
+            <script>
+                var city = document.querySelection('#city');
+                city.addEventListener('change', function () {
+                    console.log(this.value);
+                });
+            </script>
         </header>
         
     <main>
         <div class="container">
+            <div class="menu">
             <h1>Объявления</h1>
-            <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="#">Недвижимость</a>
-                    <a href="#">Услуги</a>
-                    <a href="#">Животные</a>
-                </div>
-            </div>
-
+        </div>
+        <ul>
+            <li>Недвижимость</li>
+            <li>Транспорт</li>
+            <li>Детский мир</li>
+            <li>Услуги</li>
+            <li>Спорт и путешествия</li>
+            <li>Дом и дача</li>
+        </ul>
         </div>
     </main>
     <footer>

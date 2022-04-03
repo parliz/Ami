@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+a{
+    text-decoration: none;
+}
 .header {
     padding-top: 17px;
     padding-bottom: 17px;
@@ -25,7 +28,7 @@
     color: #EA6283;
     font-weight: 700;
     text-decoration: none;
-    margin-left: 1050px;
+    margin-left: 750px;
     margin-top: 5px;
     padding: 5px 20px;
     font-size: 16px;
@@ -41,6 +44,21 @@
     display: inline-block;
     font-size: 16px;
     margin-left: 20px;
+}
+.img_place{
+    margin-top: 13px;
+    margin-left: 150px;
+}
+.cities {
+    background: none;
+    border-color: none;
+    outline: 0;
+    outline-offset: 0;
+    dispaly: none;
+    height: 25px;
+    margin-left: 0px;
+    margin-top: 15px;
+    padding: 0;
 }
 .auto {
     color: #EA6283;
@@ -92,6 +110,9 @@
         .auto input[type = "submit"]:hover {
             background: #F8F335;
         }
+nav{
+    color: red;
+}
 main .container {
     padding: 0;
     background-color: white;
