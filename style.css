@@ -114,7 +114,10 @@ li{
     list-style: none;
 }
 .side-menu{
-    position: fixed;
+    padding-left: 20px;
+    /*position: fixed;*/
+    position: static;
+    
     background: #EA6283;
     width: 18vw;/*
     height: 200px;*/
@@ -138,7 +141,13 @@ li{
 }
 .side-menu li:hover{
     background: white;
-    color: #EA6283;
+    
+}
+    .side-menu li a:hover {
+        color: #EA6283;
+    }
+.side-menu li a{
+    color: white;
 }
 main .container {
     padding: 0;
@@ -167,4 +176,17 @@ footer {
 }
 .rules_text{
     color: #EA6283;
+}
+
+.all_advert {
+    background: #FDC167; /* Цвет фона */
+    width: 330px; /* Ширина */
+    margin: 10px 10px 10px 10px; /* Отступы */
+    padding: 10px 0; /* Поля сверху и снизу */
+    text-align: center; /* Выравнивание по центру */
+    display: inline-block; /* Строчно-блочный элемент*/
+    transform: translate(350px,-550px);
+}
+        .photo p {
+            margin: 2px; /* Отступы */
 }

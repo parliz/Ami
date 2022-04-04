@@ -4,56 +4,73 @@
     <title>Ami</title>
     <link href="style.css" rel="stylesheet" type="text/css">
     </head>
-    <body>
-        <header class="header">
-            <div class="container">
-                <div class="header-login">
-                    <a href="advert.html" class="header-name">AMI</a>
-                    <img src="place.png" class="img_place" width="23" height="23">
-                    <select id="city" class="cities">
-                        <option>Москва</option>
-                        <option>Санкт-Петербург</option>
-                        <option>Новороссийск</option>
-                        <option>Екатеринбург</option>
-                        <option>Казань</option>
-                        <option>Нижний Новгород</option>
-                        <option>Челябинск</option>
-                        <option>Самара</option>
-                        <option>Красноярск</option>
-                        <option>Пермь</option>
-                        <option>Волгоград</option>
-                        <option>Чебоксары</option>
-                    </select>
-                    <a href="enter.html" class="header-autoris">Войти</a>
-                    <a href="#" class="btn">Добавить объявление</a>
-                </div>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-login">
+                <a href="advert.html" class="header-name">AMI</a>
+                <img src="place.png" class="img_place" width="23" height="23">
+                <select id="city" class="cities">
+                    <option>Москва</option>
+                    <option>Санкт-Петербург</option>
+                    <option>Новороссийск</option>
+                    <option>Екатеринбург</option>
+                    <option>Казань</option>
+                    <option>Нижний Новгород</option>
+                    <option>Челябинск</option>
+                    <option>Самара</option>
+                    <option>Красноярск</option>
+                    <option>Пермь</option>
+                    <option>Волгоград</option>
+                    <option>Чебоксары</option>
+                </select>
+                <a href="enter.html" class="header-autoris">Войти</a>
+                <a href="#" class="btn">Добавить объявление</a>
             </div>
-            <!--<a href="input.html">Войти</a>
-    <button class="btn">Добавить объявление +</button>-->
-            
-            <script>
-                var city = document.querySelection('#city');
-                city.addEventListener('change', function () {
-                    console.log(this.value);
-                });
-            </script>
-        </header>
-        
+        </div>
+        <!--<a href="input.html">Войти</a>
+        <button class="btn">Добавить объявление +</button>-->
+
+        <script>
+            var city = document.querySelection('#city');
+            city.addEventListener('change', function () {
+                console.log(this.value);
+            });
+        </script>
+    </header>
+
     <main>
         <div class="container">
             <div class="side-menu">
                 <div class="side-name">
-                <h1>Объявления</h1>
+                    <h1>Объявления</h1>
                 </div>
                 <ul>
-                    <li><img src="house.png" alt="">Недвижимость</li>
-                    <li><img src="car2.png">Транспорт</li>
-                    <li><img src="kids.png">Детский мир</li>
-                    <li><img src="service.png">Услуги</li>
-                    <li><img src="travel.png">Спорт и путешествия</li>
-                    <li><img src="pets.png">Животные</li>
-
+                    <li><img src="house.png" alt=""><a href="#">Недвижимость</li>
+                    <li><img src="car2.png"><a href="#">Транспорт</li>
+                    <li><img src="kids.png"><a href="#">Детский мир</li>
+                    <li><img src="service.png"><a href="#">Услуги</li>
+                    <li><img src="travel.png"><a href="#">Спорт и путешествия</li>
+                    <li><img src="pets.png"><a href="#">Животные</li>
                 </ul>
+            </div>
+            <div class="all_advert">
+                <a href="Req1.html" target="_blank">
+                    <p><img src="photo1.jpg" alt="" width="300"></p>
+                    <p class="descrip">Учитель английского</p>
+                </a>
+            </div>
+            <div class="all_advert">
+                    <a href="Req2.html" target="_blank">
+                        <p><img src="photo2.jpeg" alt="" width="300"></p>
+                        <p class="descrip">Продается велосипед</p>
+                    </a>
+            </div>
+            <div class="all_advert">
+                <a href="Req3.html" target="_blank">
+                     <p><img src="photo3.jpg" alt="" width="300"></p>
+                     <p class="descrip">Съем жилья</p>
+                </a>
             </div>
         </div>
     </main>
@@ -73,5 +90,7 @@
             <p><a href="#">Техподдержка</a></p>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="menu-choice.js"></script>
 </body>
 </html>
