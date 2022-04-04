@@ -3,19 +3,70 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Личный кабинет</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+    <header class="header">
+        <div class="container">
+            <div class="header-login">
+                <a href="advert.html" class="header-name">AMI</a>
+                <img src="place.png" class="img_place" width="23" height="23">
+                <select id="city" class="cities">
+                    <option>Москва</option>
+                    <option>Санкт-Петербург</option>
+                    <option>Новороссийск</option>
+                    <option>Екатеринбург</option>
+                    <option>Казань</option>
+                    <option>Нижний Новгород</option>
+                    <option>Челябинск</option>
+                    <option>Самара</option>
+                    <option>Красноярск</option>
+                    <option>Пермь</option>
+                    <option>Волгоград</option>
+                    <option>Чебоксары</option>
+                </select>
+                <a href="enter.html" class="header-autoris">Войти</a>
+                <a href="#" class="btn">Добавить объявление</a>
+            </div>
+        </div>
+        <!--<a href="input.html">Войти</a>
+        <button class="btn">Добавить объявление +</button>-->
+
+        <script>
+            var city = document.querySelection('#city');
+            city.addEventListener('change', function () {
+                console.log(this.value);
+            });
+        </script>
+    </header>
     <main>
-        <div class="content">
-            <div class="conteiner">
+        <div class="container">
+            <div class="content">
                 <div class="cabinet_title">Мой кабинет</div>
-                <ul></ul>
-                <li><a href="#">Объявления</a></li>
-                <li><a href="#">Сообщения</a></li>
-                <li><a href="#">Выход</a></li>
+                <ul>
+                    <li><a href="#">Объявления</a></li>
+                    <li><a href="#">Сообщения</a></li>
+                    <li><a href="#">Выход</a></li>
+                </ul>
             </div>
         </div>
     </main>
+    <footer>
+        <div class="contact">
+            <h3>Контакты</h3>
+            <p>Казань, ул. Большая Красная, 55</p>
+            <p>КНИТУ-КАИ им.Туполева А.Н.</p>
+            <p>Кафедра ПМИ, 3 этаж.</p>
+            <p>ежедневно 8:00-22:00</p>
+        </div>
+        <div class="sitemap">
+            <h3>Информация о сайте</h3>
+            <p><a href="rules.html">Правила подачи обяъвления</a></p>
+            <p><a href="#">Тарифы</a></p>
+            <p><a href="rules.html">Пользовательское соглашение</a></p>
+            <p><a href="#">Техподдержка</a></p>
+        </div>
+    </footer>
 </body>
 </html>
