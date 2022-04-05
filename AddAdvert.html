@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Опубликовать объявление</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="auto">
+        <h1>Публикация объявления</h1>
+        <!--<input type="email" class="inp_email" placeholder="email">
+        <input type="text" class="inp_pass" placeholder="password">
+        <input type="checkbox" name="Receipt">
+        <label for="Receipt">Я соглашаюсь с <a href="rules.html">правилами использования сервиса</a>, а также с передачей и обработкой моих данных.</label>-->
+        /*форма для загрузки изображения*/
+        <form name="forma" enctype="multipart/form-data"
+              method="post" action=http://htmlweb.ru/cgi-bin/file.cgi>
+            <input type="hidden" name="max_file_size" value="10000">
+            Фото: <input type="file" name="mURL" size="45">
+        </form>
+
+        <input type="submit" value="Опубликовать">
+        <a href="№"></a>
+    </div>
+</body>
+</html>

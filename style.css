@@ -119,8 +119,8 @@ li{
     position: static;
     
     background: #EA6283;
-    width: 18vw;/*
-    height: 200px;*/
+    width: 18vw;
+    height: 700px;
     min-height: 700hv;
     display: flex;
     flex-direction: column;
@@ -141,7 +141,7 @@ li{
 }
 .side-menu li:hover{
     background: white;
-    
+    color: #EA6283;
 }
     .side-menu li a:hover {
         color: #EA6283;
@@ -149,15 +149,75 @@ li{
 .side-menu li a{
     color: white;
 }
+.side-name-acc {
+    padding-top: 12px;
+    /*position: fixed;*/
+    position: static;
+    background: #EA6283;
+    width: 18vw;
+    height: 80px;
+    min-height: 700hv;
+    display: flex;
+    flex-direction: column;
+
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*font-size: 16px;
+    position: static;
+    flex-direction: column;*/
+}
 main .container {
-    padding: 0;
+    padding: 0px;
     background-color: white;
     height: 700px;
     margine: 0;
 }
+.tabs_acc_panel{
+    padding-top: 50px;
+}
+.tabs_item a {
+    display: block;
+    color: white;
+    background-color: #7DBCEC;
+    border-radius: 40px;
+    font-size: 26px;
+    line-height: 50px;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+}
+.tabs_items {
+    padding: 10px;
+    /*flex: 0 1 33.333%;
+    background-color: #7DBCEC;
+    border-radius: 10px;*/
+}
+.tabs_body {
+    transform: translate(277px, -275px);
+}
 body {
     background-color: #99D9DA;
     color: #FFC039;
+}
+.tabs_block {
+    padding: 70px;
+    font-size: 30px;
+    line-height: 24px;
+    display: none;
+}
+.tabs_block:nth-child(1){
+    background-color: #b200ff;
+}
+.tabs_block:nth-child(2) {        
+    background-color: #c1ea46;
+}
+.tabs_block:nth-child(3) {
+    background-color: #7DBCEC;
+}
+.tabs_block:target{
+    display: block;
 }
 footer {
     color: #233181;
@@ -176,17 +236,25 @@ footer {
 }
 .rules_text{
     color: #EA6283;
+    padding: 20px 20px;
 }
 
 .all_advert {
-    background: #FDC167; /* Цвет фона */
+    background: #99D9DA; /* Цвет фона */
     width: 330px; /* Ширина */
     margin: 10px 10px 10px 10px; /* Отступы */
     padding: 10px 0; /* Поля сверху и снизу */
     text-align: center; /* Выравнивание по центру */
     display: inline-block; /* Строчно-блочный элемент*/
-    transform: translate(350px,-550px);
+    transform: translate(350px,-700px);
 }
-        .photo p {
-            margin: 2px; /* Отступы */
+.photo p {
+    margin: 2px; /* Отступы */
 }
+
+.photo img
+{
+    border: 10px solid #c1ea46; /* Параметры рамки */
+}
+
+

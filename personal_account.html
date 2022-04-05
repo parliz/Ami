@@ -26,7 +26,8 @@
                     <option>Волгоград</option>
                     <option>Чебоксары</option>
                 </select>
-                <a href="advert" class="header-autoris">Выйти</a>
+                <a href="advert.html" class="header-autoris">Выйти</a>
+                <img src="men.png" width="35" height="35" /><a href="personal_account.html"></a>
                 <a href="#" class="btn">Добавить объявление</a>
             </div>
         </div>
@@ -42,12 +43,35 @@
     </header>
     <main>
         <div class="container">
-            <div class="content">
-                <div class="cabinet_title">Мой кабинет</div>
-                <ul>
-                <li><a href="advert.html">Объявления</a></li>
-                <li><a href="#">Сообщения</a></li>
-                </ul>
+            <div class="side-menu">
+                <div class="side-name-acc">
+                    <h1>Мой кабинет</h1>
+                </div>
+                <div class="tabs_items">
+                    <nav class="tabs_item">
+                        <a href="#tab_01" class="tabs_items active">Мои объявления</a>
+                        <a href="#tab_02" class="tabs_items">Сообщения</a>
+                        <a href="#tab_03" class="tabs_items">Настройки профиля</a>
+                    </nav>
+                </div>
+                <div class="tabs_body">
+                    <div id="tab_01" class="tabs_block">
+                        Мои объявления
+                        <label>Я соглашаюсь с <a href="rules.html">правилами использования сервиса</a>, а также с передачей и обработкой моих данных.</label>-->
+                    </div>
+                </div>
+                <div class="tabs_body">
+                    <div id="tab_02" class="tabs_block">
+                        Сообщения
+                        <label>Я не соглашаюсь с правилами.</label>
+                    </div>
+                </div>
+                <div class="tabs_body">
+                    <div id="tab_03" class="tabs_block">
+                        Настройки профиля
+                        <label>Я люблю маму.</label>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -67,5 +91,7 @@
             <p><a href="#">Техподдержка</a></p>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="menu-choice.js"></script>
 </body>
 </html>
